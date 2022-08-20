@@ -1,0 +1,283 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,600);
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about {
+    width: 95%;
+    margin: auto;
+}
+
+img.inlineimgs  {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: #263950;
+}
+
+.about figure {
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+    background: #ff9f9f;
+    top: 0;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.layer:hover {
+    opacity: 0.8;
+    height: 100%;
+    transition: all 500ms;
+}
+
+.about .layer h3,
+.about .layer p {
+    opacity: 1;
+    font-size: 1.8em;
+    font-weight: 300;
+    color: black;
+    width: 90%;
+    margin: 10px auto 0px;
+    border-bottom: 0;
+    padding-bottom: 40px;
+}
+
+.about .layer h3 {
+    font-weight: 600;
+    padding-top: 50px;
+}
+
+.about h4 {
+    color: #862b2b;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    position: relative;
+    left:634px;
+}
+
+.about figure {
+    border: 1px solid white;
+    padding: 15px;
+    margin: 30px auto;
+}
+
+.about figure a {
+    width: 50px;
+    height: 35px;
+    padding-top: 10px;
+    border-radius: 10px 15px 0px;
+    color: black;
+    background-color: #862b2b;
+    text-decoration: none;
+}
+
+
+
+
+
+.muzieknootjes {
+    display: block;
+    margin: auto;
+    position: absolute;
+    width: 50%;
+    min-width: 300px;
+    height: 200px;
+    border: 0px solid #000;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
+    position: absolute;
+    animation: notes 2s infinite linear;
+    font-size: 35px;
+    opacity: 0;
+}
+
+.noot-1 {
+    top: 60px;
+    left: 0;
+    animation-delay: 0.5s;
+    color: black;
+}
+
+.noot-2 {
+    top: 30px;
+    left: 30%;
+    animation-delay: 1s;
+    color: black;
+}
+
+.noot-3 {
+    top: 90px;
+    left: 60%;
+    animation-delay: 1.5s;
+    color: black
+;
+}
+
+.noot-4 {
+    top: 40px;
+    left: 90%;
+    animation-delay: 2s;
+    color: black;
+}
+
+@keyframes notes {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5) translate(50%, -50%);
+    }
+    80% {
+        opacity: 0;
+        transform: scale(1.5) translate(100%, -100%);
+    }
+    100% {
+        transform: scale(1.5) translate(100%, -100%);
+        opacity: 0;
+    }
+}
+h1 {
+    text-align: center;
+    margin: 40px 0 40px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    text-shadow: 2px 2px 4px #000000;
+}
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+header, footer
+{
+    font-family: Raleway;
+    margin: 0 auto;
+    padding: 5em 3em;
+    text-align: center;
+}
+
+header h1
+{
+    color: #AAA;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+/***************************/
+div.containerrr
+{
+    font-family: Raleway;
+    margin-left: 10px;
+    padding: 100px;
+    text-align: center;
+    padding-bottom: 0;
+
+}
+
+div.containerrr a.navclass
+{
+    color: #660000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Slabo 27px', serif;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+
+/* Top and Bottom borders go out */
+div.topBotomBordersOut a.navclass:before, div.topBotomBordersOut a.navclass:after
+{
+    position: absolute;
+    left: 20px;
+    width: 100%;
+    height: 2px;
+    background: #660000;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a.navclass:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a.navclass:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a.navclass:hover:before, div.topBotomBordersOut a.navclass:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+
+
+
+
+nav1 {
+    position: absolute;
+    top: 40px;
+    left: 25%;
+    right: 50%;
+    width: 319px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+
+}
+
+nav1 a.navclass {
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: #660000;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+}
+
+div.nin{
+    position: absolute;
+    left:90px;
+    padding-left: 10px;
+    top:10px;
+}
+
+nav1 a.navclass {
+    mso-padding-between:20px;
+}

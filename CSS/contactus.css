@@ -1,0 +1,265 @@
+
+* {
+    margin:0px;
+    padding:0px;
+}
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing: border-box; }
+
+.clearfix:before, .clearfix:after { display: table; content: ''; }
+.clearfix:after { clear: both; }
+
+
+body {
+    background: #ffffff;
+    color: #333;
+    font-weight: normal;
+    font-size: 1em;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+    outline: none;
+}
+::-moz-placeholder {
+    color: #666;
+    font-weight: 300;
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    color: #666;
+    font-weight: 300;
+}
+
+
+/* Contact Form Styling */
+.container {
+    padding: 0 50px 70px;
+}
+.textcenter {
+    text-align: center;
+}
+.section1 {
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+.section1 .shtext {
+    display: block;
+    margin-top: 20px;
+}
+.section1 .seperator {
+    border-bottom:1px solid #a2a2a2;
+    width: 35px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.section1 h1 {
+    font-size: 40px;
+    color: #a83939;
+    font-weight: normal;
+}
+
+.section2 {
+    width: 1200px;
+    margin: 25px auto;
+}
+.section2 .col2 {
+    width: 48.71%;
+}
+.section2 .col2.first {
+    float: left;
+}
+.section2 .col2.last {
+    float: right;
+}
+.section2 .col2.column2 {
+    padding: 0 30px;
+}
+.section2 span.collig {
+    color: #a2a2a2;
+    margin-right: 10px;
+    display: inline-block;
+}
+.section2 .sec2addr {
+    display: block;
+    line-height: 26px;
+}
+.section2 .sec2addr p:first-child {
+    margin-bottom: 10px;
+}
+.section2 .sec2contactform input[type="text"],
+.section2 .sec2contactform input[type="email"],
+.section2 .sec2contactform textarea {
+    padding: 18px;
+    border: 0;
+    background: #EDEDED;
+    margin: 7px 0;
+}
+.section2 .sec2contactform textarea {
+    width: 100%;
+    display: block;
+    color: #666;
+    resize:none;
+}
+.section2 .sec2contactform input[type="submit"] {
+    padding: 15px 40px;
+    color: #fff;
+    border: 0;
+    background: #a83939;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.section2 .sec2contactform h3 {
+    font-weight: normal;
+    margin: 20px 0;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 19px;
+    color: #ffffff;
+}
+
+/* @media querries */
+
+@media only screen and (max-width: 1266px) {
+    .section2 {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .container {
+        padding: 0 30px 70px;
+    }
+    .section2 .col2 {
+        width: 100%;
+        display: block;
+    }
+    .section2 .col2.first {
+        margin-bottom: 10px;
+    }
+    .section2 .col2.column2 {
+        padding: 0;
+    }
+    body .sec2map {
+        height: 250px !important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .section2 .sec2addr {
+        font-size: 14px;
+    }
+    .section2 .sec2contactform h3 {
+        font-size: 16px;
+    }
+    .section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+        padding: 10px;
+        margin:3px 0;
+    }
+    .section2 .sec2contactform input[type="submit"] {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    .section1 h1 {
+        font-size: 28px;
+    }
+}
+
+/**********************/
+
+div.containerrr
+{
+    font-family: Raleway;
+    margin-left: 10px;
+    padding: 110px;
+    text-align: center;
+    padding-bottom: 0;
+
+}
+
+div.containerrr a.navclass
+{
+    color: #660000;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Slabo 27px', serif;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+
+/* Top and Bottom borders go out */
+div.topBotomBordersOut a.navclass:before, div.topBotomBordersOut a.navclass:after
+{
+    position: absolute;
+    left: 20px;
+    width: 100%;
+    height: 2px;
+    background: #660000;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a.navclass:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a.navclass:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a.navclass:hover:before, div.topBotomBordersOut a.navclass:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+nav1 {
+    position: absolute;
+    top: 40px;
+    left: 25%;
+    right: 50%;
+    width: 319px;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-50%);
+
+}
+
+nav1 a.navclass {
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: #660000;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: 0.2s ease color;
+}
+
+*.nin{
+    position: absolute;
+    left:90px;
+    padding-left: 10px;
+    top:10px;
+}
+
+nav1 a.navclass {
+    mso-padding-between:20px;
+}
